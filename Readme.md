@@ -12,7 +12,7 @@
 
 2. Execute `./data/build_auxiliary_triples.py` for construct auxiliary triples for datasets
 
-3. Move into floder `LLM_Discriminator`, run `./scripts/run_fb15k237n_kopa.sh` for finetune the LLM to obtain finetuned LLM as a triple discriminator for filtering auxiliary triples. Due to the size of the data, you need to download and unzip the data file data.zip from ([this link](https://drive.google.com/file/d/1J1Ioi23jTMaBkBDYzfIy2MAZYMUIjFWW/view)) and put them in the `./LLM_Discriminator/scripts/data/`
+3. Move into floder `LLM_Discriminator`, run `./scripts/finetune_fb15k237n.sh` for finetune the LLM to obtain finetuned LLM as a triple discriminator for filtering auxiliary triples. Due to the size of the data, you need to download and unzip the data file data.zip from ([this link](https://drive.google.com/file/d/1J1Ioi23jTMaBkBDYzfIy2MAZYMUIjFWW/view)) and put them in the `./LLM_Discriminator/scripts/data/`
 
 4. Feed the auxiliary triples build in step 2 into finetuned LLM discriminator by run `discriminator.py`
 
